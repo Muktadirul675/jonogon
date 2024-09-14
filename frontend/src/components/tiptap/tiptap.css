@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menu{
+        @apply rounded-lg border border-blue-500 my-3 flex w-full flex-wrap sticky top-0  bg-background-primary  z-[10]
+    }
+    .menu > div{
+        @apply p-3 text-white transition-all cursor-pointer first:rounded-tl-lg first:rounded-bl-lg last:rounded-tr-lg last:rounded-br-lg
+    }
+    .menu >div.is_active{
+        @apply bg-blue-500
+    }
+}
